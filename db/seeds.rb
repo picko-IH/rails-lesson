@@ -7,6 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 # Post.create(content: 'sample content')
-Post.create(content: "今日からProgateでRailsの勉強するよー！")
-Post.create(content: "投稿一覧ページ作成中！")
-Post.create(content: "やっぱりプログラミングは楽しい！")
+if Post.count == 0
+  Post.create(content: "今日からProgateでRailsの勉強するよー！")
+  Post.create(content: "投稿一覧ページ作成中！")
+  Post.create(content: "やっぱりプログラミングは楽しい！")
+end
